@@ -1,0 +1,39 @@
+# Local configuration
+.env
+.env.*
+!.env.example
+**/_local_*.py
+**/_local_*.http
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+
+# Flask runtime
+instance/
+*.sqlite
+*.sqlite3
+*.db
+*.log
+
+# Node / Vue
+node_modules/
+dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editors and operating systems
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Local user and order exports
+flask_shop/db/usedata.sql
+flask_shop/db/order.sql
+
