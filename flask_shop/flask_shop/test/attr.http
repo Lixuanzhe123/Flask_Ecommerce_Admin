@@ -1,0 +1,31 @@
+###测试获得某个商品的属性
+GET http://127.0.0.1:5000/attributes/?cid=204&_type=static
+
+###测试创立某个属性
+POST http://127.0.0.1:5000/attributes/
+Content-Type: application/json
+
+{
+    "cid": 65,
+    "name": "测试属性1",
+    "_type": "static",
+    "val": "测试属性值1"
+}
+
+
+###测试得到某个属性
+GET http://127.0.0.1:5000/attribute/1/
+
+###测试修改某个属性
+PUT http://127.0.0.1:5000/attribute/28/
+Content-Type: application/json
+
+{
+    "cid": 66,
+    "name": "测试属性",
+    "_type": "static",
+    "val": "测试属性值2"
+}
+
+###测试删除某个属性
+DELETE http://127.0.0.1:5000/attribute/28/

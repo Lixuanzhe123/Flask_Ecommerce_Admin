@@ -1,0 +1,29 @@
+###测试获得
+Get http://127.0.0.1:5000/products/
+
+###测试删除
+DELETE   http://127.0.0.1:5000/product/6
+
+###测试添加商品
+POST http://127.0.0.1:5000/products/
+Content-Type:application/json
+
+{
+    "name":"商品1",
+    "price":12,
+    "number":200,
+    "introduce":"这是商品1",
+    "weight":30,
+    "cid_one":1,
+    "cid_two":17,
+    "cid_three":75,
+    "pics":[
+        {"path":"pic1.png"},{"path":"pic2.png"}
+    ],
+    "attr_static":[
+        {"id":4,"val":"S"}
+    ],
+    "attr_dynamic":[
+        {"id":25,"val":["X","S","L"]}
+    ]
+}

@@ -1,0 +1,9 @@
+Flask>=2.2,<4
+Flask-Cors>=4,<7
+Flask-Migrate>=4,<5
+Flask-RESTful>=0.3.10,<1
+Flask-SQLAlchemy>=3,<4
+PyJWT>=2,<3
+PyMySQL>=1,<2
+python-dotenv>=1,<2
+

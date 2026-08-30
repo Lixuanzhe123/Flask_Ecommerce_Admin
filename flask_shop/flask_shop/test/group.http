@@ -1,0 +1,30 @@
+###添加
+POST http://127.0.0.1:5000/category/
+Content-Type: application/json
+
+{
+    "name":"测试",
+    "level":3
+}
+
+
+###查询
+GET http://127.0.0.1:5000/category/?level=3
+
+
+###查询某一个的商品以及子级
+GET http://127.0.0.1:5000/category/1
+
+###上传图片
+POST http://127.0.0.1:5000/upload_img
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="file"; filename="1.png"
+Content-Type: image/png
+
+< ../../01.png
+------WebKitFormBoundary7MA4YWxkTrZu0gW--
+
+###分类列表的等级水平统计
+GET  http://127.0.0.1:5000/category/cate_group/

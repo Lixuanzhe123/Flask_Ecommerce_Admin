@@ -1,0 +1,1 @@
+insert into t_role (name,description) VALUES ('管理员','普通管理权限');

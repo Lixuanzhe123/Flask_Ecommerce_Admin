@@ -1,0 +1,33 @@
+###获得角色列表
+GET http://127.0.0.1:5000/role/roles/
+
+###创建角色
+POST http://127.0.0.1:5000/role/roles/
+content-type: application/json
+
+{
+    "name":"管理员vip",
+    "description":"管理中的vip"
+}
+
+###删除角色
+DELETE http://127.0.0.1:5000/role/roles/1
+
+###修改角色
+PUT http://127.0.0.1:5000/role/roles/3
+content-type: application/json
+
+{
+    "description":"普通管理员"
+}
+
+###获得角色权限
+DELETE http://127.0.0.1:5000/role/roles/2/21/
+
+###分配权限
+POST http://127.0.0.1:5000/role/3/
+content-type: application/json
+
+{
+    "mids":"2,21,3,31"
+}

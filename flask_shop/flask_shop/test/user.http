@@ -1,0 +1,55 @@
+### 测试登录 API
+POST http://127.0.0.1:5000/user/login
+Content-Type: application/json
+
+{
+  "username": "demo_admin",
+  "pwd": "change-me"
+}
+
+### 测试注册功能
+POST http://127.0.0.1:5000/user/users
+Content-Type: application/json
+
+{
+  "name": "demo_user",
+  "password": "change-me",
+  "re_password": "change-me",
+  "email": "demo@example.com",
+  "phone": "13800000000",
+  "nick_name": "测试用户",
+  "role_id": 3
+}
+
+### 测试 Token 验证
+GET http://127.0.0.1:5000/user/info
+token: <your-token>
+
+### 获取所有菜单
+GET http://127.0.0.1:5000/menu/menus
+
+### 获取菜单树
+GET http://127.0.0.1:5000/menu/menus?type_=trea
+
+### 获取指定用户
+GET http://127.0.0.1:5000/user/user/2/
+
+### 修改用户信息
+PUT http://127.0.0.1:5000/user/user/2/
+Content-Type: application/json
+
+{
+  "role_id": "2"
+}
+
+### 获取所有用户
+GET http://127.0.0.1:5000/user/users/
+
+### 重置密码
+PUT http://127.0.0.1:5000/user/reset_password/4/
+Content-Type: application/json
+
+{
+  "password": "change-me"
+}
+
